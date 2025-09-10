@@ -22,7 +22,14 @@ const ai = new GoogleGenAI({});
 
 // Basic route for testing
 app.get("/", (req, res) => {
-  res.send("Hello from the AI Chatbot 🤖 Backend!");
+  res.status(200).json({
+    message: "🎉 Welcome to the Express backend server!",
+    status: "Server is running",
+    endpoints: {
+      test: "GET /api/v1/test/",
+      chat: "POST /api/v1/chat/",
+    },
+  });
 });
 
 // Route to handle chat requests
@@ -103,15 +110,14 @@ app.post("/api/v1/chat/", async (req, res) => {
 
 // Start the server
 app.listen(PORT, () => {
-  console.log(`🚀 Server started successfully!`);
-  console.log(`🌍 Server URL: http://localhost:${PORT}`);
-  console.log(`📋 Available endpoints:`);
+  console.log(`🚀 Server has started successfully! ✅`);
+  console.log(`🌍 Server running at: http://localhost:${PORT} ⬅️`);
+  console.log(`📋 Available endpoints:⬇️`);
   console.log(`   • GET  /                           - Health check`);
   console.log(`   • GET  /api/v1/test/               - Test Gemini connection`);
   console.log(`   • POST /api/v1/chat/               - Traditional chat (complete response)`);
-  console.log(`   • POST /api/v1/chat/stream/        - Streaming chat (real-time)`);
-  console.log(`   • POST /api/v1/interview/stream/   - Streaming interview (for TextBot)`);
-  console.log(`\n💡 Make sure GEMINI_API_KEY is set in your .env file`);
+
+  console.log(`\n💡 Make sure GEMINI_API_KEY is set in your .env file\n`);
 
   // Check if API key is configured
   if (!process.env.GEMINI_API_KEY) {

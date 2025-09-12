@@ -87,9 +87,9 @@ Turners is currently undertaking a major re-design of its motor vehicle insuranc
 
 ### Built With
 
-- ![React][React.js]
-- ![Vite][Vite]
 - ![Node][Node-badge]
+- ![Express][Express]
+- ![Gemini][Gemini-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -198,3 +198,5 @@ Don't forget to give the project a star! Thanks again!
 [JQuery-url]: https://jquery.com
 [Vite]: https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E
 [Node-badge]: https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white
+[Express]: https://img.shields.io/badge/Express%20js-000000?style=for-the-badge&logo=express&logoColor=white
+[Gemini-url]: https://img.shields.io/badge/Google%20Gemini-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white

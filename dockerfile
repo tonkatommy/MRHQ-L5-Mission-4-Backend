@@ -2,7 +2,7 @@
 FROM node:alpine
 
 # Set working directory
-# WORKDIR /app
+WORKDIR /app
 
 # Copy package files and install dependencies
 COPY package*.json ./

@@ -88,25 +88,6 @@ app.post("/api/v1/chat/", async (req, res) => {
       "Access-Control-Allow-Headers": "Cache-Control",
     });
 
-    // // Get conversation context
-    // let context = conversationContexts.get(currentSessionId);
-    // if (!context) {
-    //   // Create new context if none exists
-    //   context = {
-    //     systemPrompt: "You are a helpful AI assistant. Be concise but thorough in your responses.",
-    //     messages: [],
-    //     createdAt: new Date(),
-    //   };
-    //   conversationContexts.set(currentSessionId, context);
-    // }
-
-    // // Add user message to conversation history
-    // context.messages.push({
-    //   role: "user",
-    //   content: userInput,
-    //   timestamp: new Date(),
-    // });
-
     // Call Google GenAI API for response
     try {
       // Send the session ID first
